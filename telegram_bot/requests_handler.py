@@ -2,6 +2,8 @@
 Otherwise it will not react as there will be no information on a chat in the requests_dict"""
 
 import datetime
+import time
+
 import dotenv
 import os
 import telebot
@@ -9,10 +11,48 @@ from loguru import logger
 import telegram_bot.bot_messages as bot_messages
 from hotels_API import api_requests
 from telegram_bot.request_data import *
+import psycopg2
 
 dotenv.load_dotenv()
 token = os.getenv('TOKEN')
 bot = telebot.TeleBot(token)
+
+
+def sql_connect_and_insert_data(db_chat_id: str, db_command: str, db_city: str) -> None:
+    sql_connect = psycopg2.connect(
+        host='localhost',
+        database=os.getenv('db_name'),
+        user=os.getenv('db_username'),
+        password=os.getenv('db_password')
+    )
+    cursor = sql_connect.cursor()
+    sql_command = f'''
+    INSERT INTO queries(chat_id, command, city, date_time)
+    VALUES('{db_chat_id}', '{db_command}', '{db_city}', CURRENT_TIMESTAMP)
+                  '''
+    cursor.execute(sql_command)
+    sql_connect.commit()
+    sql_connect.close()
+
+
+def sql_connect_and_read_data(db_chat_id) -> list:
+    sql_connect = psycopg2.connect(
+        host='localhost',
+        database=os.getenv('db_name'),
+        user=os.getenv('db_username'),
+        password=os.getenv('db_password')
+    )
+    cursor = sql_connect.cursor()
+    sql_command = f'''
+        SELECT * FROM queries WHERE chat_id = '{db_chat_id}' ORDER BY date_time DESC LIMIT 5;
+                      '''
+    cursor.execute(sql_command)
+    data = cursor.fetchall()
+    sql_connect.commit()
+    sql_connect.close()
+    return data
+
+
 
 city = None
 logger.add(f'logging/{datetime.datetime.now().strftime("%Y/%m/%d/%H:%M:%S")}.log', rotation="00:00")
@@ -34,7 +74,7 @@ def request_data_update(message: telebot.types.Message, chat_id: int, command: s
 
 @logger.catch()
 def results_quantity_setter(request: Request) -> None:
-    """Sends the message  to the user to pick the max quantity of the possible search results."""
+    """Sends the message to the user to pick the max quantity of the possible search results."""
     logger.debug(f'Request: {request.chat_id}.')
     results_quantity_keyboard = telebot.types.InlineKeyboardMarkup(row_width=3)
     five_button = telebot.types.InlineKeyboardButton(text='5', callback_data=5)
@@ -90,6 +130,30 @@ def search_commands_handler(request, command):
     bot_mes = bot.send_message(chat_id=request.chat_id,
                                text=bot_messages.following_messages[request.lang]['city'])
     request_data_update(message=bot_mes, chat_id=bot_mes.chat.id, command=command)
+
+
+@logger.catch()
+@bot.message_handler(commands=['history'])
+def history_command(message: telebot.types.Message) -> None:
+    """Handles /history command. Returns up to 5 last search commands for given chat id."""
+    if str(message.chat.id) in requests_dict:
+        request = requests_dict[str(message.chat.id)]
+        logger.debug(f'Request: {request.chat_id}.')
+        language = request.lang
+        chat_id = request.chat_id
+        data = sql_connect_and_read_data(chat_id)
+        if data:
+            message_text = bot_messages.following_messages[language]['history_message']
+            message_text += '\n'
+            for inquery in data:
+                message_text += f'command: {inquery[1]}, city: {inquery[2]}, date and time: {inquery[3].date()}\n'
+        else:
+            message_text = bot_messages.following_messages[language]['no_history']
+        bot.send_message(chat_id=chat_id, text=message_text)
+        options_message(request)
+
+
+
 
 
 @logger.catch()
@@ -206,6 +270,7 @@ def max_searches_callback_handler(call: telebot.types.CallbackQuery) -> None:
     """Handles the max searches choice as the callback query. That is the last step before the API is involved."""
     if str(call.message.chat.id) in requests_dict:
         request = requests_dict[str(call.message.chat.id)]
+        sql_connect_and_insert_data(request.chat_id, request.command, request.city)
         inline_keyboard_remover(request)
         request.search_results = call.data
         if request.lang == 'ru':

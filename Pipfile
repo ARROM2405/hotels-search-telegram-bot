@@ -7,6 +7,7 @@ name = "pypi"
 pytelegrambotapi = "*"
 python-dotenv = "*"
 loguru = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

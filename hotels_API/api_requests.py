@@ -66,7 +66,9 @@ def get_hotels(request: Request, sort_order: str, price_min: int = None, price_m
         stars = '⭐' * int(ceil(hotel['starRating']))
         address = f"{hotel['address']['locality']}"
         distance = f"Distance from the center - {hotel['landmarks'][0]['distance']}"
-        price = f"{hotel['ratePlan']['price']['current']} {hotel['ratePlan']['price']['info']}"
+        # price = f"{hotel['ratePlan']['price']['current']} {hotel['ratePlan']['price']['info']}"
+        price = f"{hotel.get('ratePlan', {}).get('price', {}).get('current')} " \
+                f"{hotel.get('ratePlan', {}).get('price', {}).get('info')}"
         if sort_order == "DISTANCE_FROM_LANDMARK":
             if hotel['landmarks'][0]['distance'] > request.distance:
                 continue

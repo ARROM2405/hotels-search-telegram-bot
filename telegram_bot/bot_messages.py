@@ -16,6 +16,7 @@ following_messages = {'en': {
 /low_price - list of the hotels at the lowest price
 /high_price - list of the hotels at the highest price
 /best_deal - list of closest hotels to the location in the indicated price margins
+/history - history of your searches
 /done - end of the request''',
     'currency_message': 'What currency would you like the prices to be in?',
     'city_message': 'What city would you like to go to?',
@@ -24,6 +25,7 @@ following_messages = {'en': {
     'lowest_price_message': 'What is the lowest price you would like to start with?',
     'distance_from_center_message': 'What is the farthest distance from center you want the hotel to be in, miles?',
     'history_message': 'Here is the history of your requests:',
+    'no_history': 'No previous requests from you.',
     'done_message': 'Your inquiry is closed. If needed, please start a ney inquiry with a /start command.',
     'best_deal_prices': 'Please input tha acceptable price range in the format: min price - max price in €.',
     'best_deal_distance': 'Please provide the distance range to the center in which the hotel can be located',
@@ -43,6 +45,7 @@ following_messages = {'en': {
 /low_price (низкая цена) - список самых дешевых отелей
 /high_price (высокая цена) - список самых дорогих отелей
 /best_deal (лучшее предложение) - список самых близких отелей в определенных ценовых рамках
+/history - история ваших поисков
 /done (закончить запрос) - закончить запрос''',
         'currency_message': 'В какой валюте мне показывать цены?',
         'city_message': 'В каком городе ищем отель?',
@@ -51,6 +54,7 @@ following_messages = {'en': {
         'lowest_price_message': 'С какой самой низкой цены мне начать поиск?',
         'distance_from_center_message': 'В каком диапазоне от центра города мне искать отели, в км?',
         'history_message': 'Вот твоя история запросов:',
+        'no_history': 'Раннее не было от вас запросов.',
         'done_message': 'Ваш запрос закрыт. Если нужно, пожалуйста начните новый запрос с помощъю команды /start',
         'best_deal_prices': 'Пожалуйста, укажите ценовой диапазон в формате: минимальная цена - максимальная цена в €.',
         'best_deal_distance':

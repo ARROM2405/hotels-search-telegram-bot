@@ -1,0 +1,50 @@
+2022-08-01 08:11:46.066 | DEBUG    | telegram_bot.requests_handler:start_command:101 - Request: 529416367.
+2022-08-01 08:11:46.066 | DEBUG    | telegram_bot.requests_handler:start_command:101 - Request: 529416367.
+2022-08-01 08:11:46.317 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:46.317 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:48.576 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:48.576 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:48.657 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2022-08-01 08:11:48.657 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2022-08-01 08:11:48.740 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:48.740 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:48.740 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:121 - Request: 529416367.
+2022-08-01 08:11:48.740 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:121 - Request: 529416367.
+2022-08-01 08:11:50.160 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:50.160 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:50.252 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:89 - Request: 529416367.
+2022-08-01 08:11:50.252 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:89 - Request: 529416367.
+2022-08-01 08:11:50.332 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:50.332 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:50.333 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:134 - Request: 529416367.
+2022-08-01 08:11:50.333 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:134 - Request: 529416367.
+2022-08-01 08:11:53.573 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:53.573 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:53.656 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:53.656 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:55.802 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:55.802 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:55.980 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:38 - Request: 529416367.
+2022-08-01 08:11:55.980 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:38 - Request: 529416367.
+2022-08-01 08:11:56.066 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:56.066 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:11:57.849 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:57.849 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:11:58.012 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2022-08-01 08:11:58.012 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2022-08-01 08:11:58.012 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: poltava.
+2022-08-01 08:11:58.012 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: poltava.
+2022-08-01 08:12:00.052 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2022-08-02 - 2022-08-03
+2022-08-01 08:12:00.052 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2022-08-02 - 2022-08-03
+2022-08-01 08:12:01.997 | DEBUG    | hotels_API.api_requests:get_hotels:75 - Done hotels search. Request: 529416367.
+2022-08-01 08:12:01.997 | DEBUG    | hotels_API.api_requests:get_hotels:75 - Done hotels search. Request: 529416367.
+2022-08-01 08:12:02.150 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:12:02.150 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:12:02.151 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2022-08-01 08:12:02.151 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2022-08-01 08:12:02.317 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:12:02.317 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2022-08-01 08:12:07.897 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:12:07.897 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2022-08-01 08:12:08.345 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:160 - Request: 529416367.
+2022-08-01 08:12:08.345 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:160 - Request: 529416367.

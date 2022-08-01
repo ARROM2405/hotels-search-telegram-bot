@@ -1,0 +1,102 @@
+2021-10-19 20:14:56.615 | DEBUG    | telegram_bot.requests_handler:start_command:102 - Request: 529416367.
+2021-10-19 20:14:56.615 | DEBUG    | telegram_bot.requests_handler:start_command:102 - Request: 529416367.
+2021-10-19 20:14:56.813 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:14:56.813 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:14:58.082 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:14:58.082 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:14:58.279 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 20:14:58.279 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 20:14:58.396 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:14:58.396 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:14:58.397 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:122 - Request: 529416367.
+2021-10-19 20:14:58.397 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:122 - Request: 529416367.
+2021-10-19 20:15:00.168 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:00.168 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:00.267 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 20:15:00.267 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 20:15:00.358 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:00.358 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:00.359 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 20:15:00.359 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 20:15:06.496 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:06.496 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:06.597 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:06.597 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:08.101 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:08.101 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:08.186 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 20:15:08.186 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 20:15:08.285 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:08.285 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 20:15:09.665 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:09.665 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 20:15:09.848 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 20:15:09.848 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 20:15:09.849 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: полтава.
+2021-10-19 20:15:09.849 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: полтава.
+2021-10-19 20:15:12.623 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 20:15:12.623 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 20:15:12.623 | ERROR    | hotels_API.api_requests:low_price:92 - An error has been caught in function 'low_price', process 'MainProcess' (1401), thread 'WorkerThread2' (123145416900608):
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7fb8763bab00>
+    └ <WorkerThread(WorkerThread2, started daemon 123145416900608)>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x7fb87653dcb0>
+    └ <WorkerThread(WorkerThread2, started daemon 123145416900608)>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x7fb87876dd50>,)
+    └ <function max_searches_callback_handler at 0x7fb8787489e0>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 258, in max_searches_callback_handler
+    message_text = api_requests.low_price(request=request)
+                   │            │                 └ <telegram_bot.request_data.Request object at 0x7fb87875ae10>
+                   │            └ <function low_price at 0x7fb878735b90>
+                   └ <module 'hotels_API.api_requests' from '/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hot...
+
+> File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hotels_API/api_requests.py", line 92, in low_price
+    result = get_hotels(request=request, sort_order="PRICE")
+             │                  └ <telegram_bot.request_data.Request object at 0x7fb87875ae10>
+             └ <function get_hotels at 0x7fb878735830>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hotels_API/api_requests.py", line 60, in get_hotels
+    if len(response['data']['body']['searchResults']['results']) == 0:
+
+UnboundLocalError: local variable 'response' referenced before assignment
+2021-10-19 20:15:12.623 | ERROR    | hotels_API.api_requests:low_price:92 - An error has been caught in function 'low_price', process 'MainProcess' (1401), thread 'WorkerThread2' (123145416900608):
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7fb8763bab00>
+    └ <WorkerThread(WorkerThread2, started daemon 123145416900608)>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x7fb87653dcb0>
+    └ <WorkerThread(WorkerThread2, started daemon 123145416900608)>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x7fb87876dd50>,)
+    └ <function max_searches_callback_handler at 0x7fb8787489e0>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 258, in max_searches_callback_handler
+    message_text = api_requests.low_price(request=request)
+                   │            │                 └ <telegram_bot.request_data.Request object at 0x7fb87875ae10>
+                   │            └ <function low_price at 0x7fb878735b90>
+                   └ <module 'hotels_API.api_requests' from '/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hot...
+
+> File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hotels_API/api_requests.py", line 92, in low_price
+    result = get_hotels(request=request, sort_order="PRICE")
+             │                  └ <telegram_bot.request_data.Request object at 0x7fb87875ae10>
+             └ <function get_hotels at 0x7fb878735830>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/hotels_API/api_requests.py", line 60, in get_hotels
+    if len(response['data']['body']['searchResults']['results']) == 0:
+
+UnboundLocalError: local variable 'response' referenced before assignment

@@ -1,0 +1,16 @@
+2021-10-19 20:02:58.723 | DEBUG    | telegram_bot.requests_handler:start_command:101 - Request: 529416367.
+2021-10-19 20:02:58.723 | DEBUG    | telegram_bot.requests_handler:start_command:101 - Request: 529416367.
+2021-10-19 20:02:58.944 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2021-10-19 20:02:58.944 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2021-10-19 20:02:59.982 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2021-10-19 20:02:59.982 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2021-10-19 20:03:00.163 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2021-10-19 20:03:00.163 | DEBUG    | telegram_bot.requests_handler:options_message:56 - Request: 529416367.
+2021-10-19 20:03:00.269 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2021-10-19 20:03:00.269 | DEBUG    | telegram_bot.requests_handler:request_data_update:30 - Update request: 529416367.
+2021-10-19 20:03:00.270 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:121 - Request: 529416367.
+2021-10-19 20:03:00.270 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:121 - Request: 529416367.
+2021-10-19 20:03:01.413 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2021-10-19 20:03:01.413 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:79 - Request: 529416367.
+2021-10-19 20:03:01.696 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:160 - Request: 529416367.
+2021-10-19 20:03:01.696 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:160 - Request: 529416367.

@@ -1,0 +1,188 @@
+2021-10-19 22:38:00.887 | DEBUG    | telegram_bot.requests_handler:start_command:102 - Request: 529416367.
+2021-10-19 22:38:00.887 | DEBUG    | telegram_bot.requests_handler:start_command:102 - Request: 529416367.
+2021-10-19 22:38:01.082 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:01.082 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:02.129 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:02.129 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:02.308 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:02.308 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:02.397 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:02.397 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:02.398 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:122 - Request: 529416367.
+2021-10-19 22:38:02.398 | DEBUG    | telegram_bot.requests_handler:lang_callback_handler:122 - Request: 529416367.
+2021-10-19 22:38:04.239 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:04.239 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:04.314 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 22:38:04.314 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 22:38:04.387 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:04.387 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:04.387 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 22:38:04.387 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 22:38:07.768 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:07.768 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:07.887 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:07.887 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:12.837 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:12.837 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:12.838 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:12.838 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:12.916 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:12.916 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:12.933 | ERROR    | telegram_bot.requests_handler:yes_callback_handler:180 - An error has been caught in function 'yes_callback_handler', process 'MainProcess' (1662), thread 'WorkerThread2' (123145572618240):
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7feade3cab00>
+    └ <WorkerThread(WorkerThread2, started daemon 123145572618240)>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x7feade43dcb0>
+    └ <WorkerThread(WorkerThread2, started daemon 123145572618240)>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x7feae075b790>,)
+    └ <function yes_callback_handler at 0x7feae07197a0>
+
+> File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 180, in yes_callback_handler
+    inline_keyboard_remover(request)
+    │                       └ <telegram_bot.request_data.Request object at 0x7feade42fb10>
+    └ <function inline_keyboard_remover at 0x7feae070af80>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 83, in inline_keyboard_remover
+    text=request.last_message_text, reply_markup=None)
+         │       └ 'Please confirm the  city -  poltava'
+         └ <telegram_bot.request_data.Request object at 0x7feade42fb10>
+
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/__init__.py", line 1862, in edit_message_text
+    entities, disable_web_page_preview, reply_markup)
+    │         │                         └ None
+    │         └ None
+    └ None
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 1125, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           │             │      │                  └ {'text': 'Please confirm the  city -  poltava', 'chat_id': 529416367, 'message_id': 2379}
+           │             │      └ 'editMessageText'
+           │             └ '1933711584:AAFzo-V0nefPbt_HPocVo57ElAbSfaSlhbs'
+           └ <function _make_request at 0x7feade512560>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  │             │            └ <Response [400]>
+                  │             └ 'editMessageText'
+                  └ <function _check_result at 0x7feade5124d0>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          │                    │            │       └ {'ok': False, 'error_code': 400, 'description': 'Bad Request: message is not modified: specified new message content and repl...
+          │                    │            └ <Response [400]>
+          │                    └ 'editMessageText'
+          └ <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-10-19 22:38:12.933 | ERROR    | telegram_bot.requests_handler:yes_callback_handler:180 - An error has been caught in function 'yes_callback_handler', process 'MainProcess' (1662), thread 'WorkerThread2' (123145572618240):
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 890, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7feade3cab00>
+    └ <WorkerThread(WorkerThread2, started daemon 123145572618240)>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x7feade43dcb0>
+    └ <WorkerThread(WorkerThread2, started daemon 123145572618240)>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.CallbackQuery object at 0x7feae075b790>,)
+    └ <function yes_callback_handler at 0x7feae07197a0>
+
+> File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 180, in yes_callback_handler
+    inline_keyboard_remover(request)
+    │                       └ <telegram_bot.request_data.Request object at 0x7feade42fb10>
+    └ <function inline_keyboard_remover at 0x7feae070af80>
+
+  File "/Users/artem/Desktop/Courses/Skillbox/python/diploma_project/python_basic_diploma/telegram_bot/requests_handler.py", line 83, in inline_keyboard_remover
+    text=request.last_message_text, reply_markup=None)
+         │       └ 'Please confirm the  city -  poltava'
+         └ <telegram_bot.request_data.Request object at 0x7feade42fb10>
+
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/__init__.py", line 1862, in edit_message_text
+    entities, disable_web_page_preview, reply_markup)
+    │         │                         └ None
+    │         └ None
+    └ None
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 1125, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           │             │      │                  └ {'text': 'Please confirm the  city -  poltava', 'chat_id': 529416367, 'message_id': 2379}
+           │             │      └ 'editMessageText'
+           │             └ '1933711584:AAFzo-V0nefPbt_HPocVo57ElAbSfaSlhbs'
+           └ <function _make_request at 0x7feade512560>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  │             │            └ <Response [400]>
+                  │             └ 'editMessageText'
+                  └ <function _check_result at 0x7feade5124d0>
+  File "/Users/artem/Desktop/diploma_project/lib/python3.7/site-packages/telebot/apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          │                    │            │       └ {'ok': False, 'error_code': 400, 'description': 'Bad Request: message is not modified: specified new message content and repl...
+          │                    │            └ <Response [400]>
+          │                    └ 'editMessageText'
+          └ <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2021-10-19 22:38:12.955 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:12.955 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:13.021 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:13.021 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:13.132 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:13.132 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:20.557 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:20.557 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:20.743 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 22:38:20.743 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 22:38:20.743 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: poltava.
+2021-10-19 22:38:20.743 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: poltava.
+2021-10-19 22:38:23.623 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 22:38:23.623 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 22:38:28.493 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:28.493 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:28.582 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:28.582 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:32.043 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:32.043 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:32.125 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 22:38:32.125 | DEBUG    | telegram_bot.requests_handler:search_commands_handler:90 - Request: 529416367.
+2021-10-19 22:38:32.217 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:32.217 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:32.218 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 22:38:32.218 | DEBUG    | telegram_bot.requests_handler:command_callback_handler:135 - Request: 529416367.
+2021-10-19 22:38:36.205 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:36.205 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:36.304 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:36.304 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:40.024 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:40.024 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:40.110 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:40.110 | DEBUG    | telegram_bot.requests_handler:results_quantity_setter:39 - Request: 529416367.
+2021-10-19 22:38:40.209 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:40.209 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:41.431 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:41.431 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:38:41.630 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 22:38:41.630 | DEBUG    | hotels_API.api_requests:low_price:91 - Returning the search result. Request: 529416367.
+2021-10-19 22:38:41.631 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: kiev.
+2021-10-19 22:38:41.631 | DEBUG    | hotels_API.api_requests:destination_id_search:24 - city: kiev.
+2021-10-19 22:38:45.701 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 22:38:45.701 | DEBUG    | hotels_API.api_requests:dates_range:40 - Dates range set 2021-10-20 - 2021-10-21
+2021-10-19 22:38:51.120 | DEBUG    | hotels_API.api_requests:get_hotels:75 - Done hotels search. Request: 529416367.
+2021-10-19 22:38:51.120 | DEBUG    | hotels_API.api_requests:get_hotels:75 - Done hotels search. Request: 529416367.
+2021-10-19 22:38:51.225 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:51.225 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:51.226 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:51.226 | DEBUG    | telegram_bot.requests_handler:options_message:57 - Request: 529416367.
+2021-10-19 22:38:51.307 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:38:51.307 | DEBUG    | telegram_bot.requests_handler:request_data_update:31 - Update request: 529416367.
+2021-10-19 22:39:03.570 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:39:03.570 | DEBUG    | telegram_bot.requests_handler:inline_keyboard_remover:80 - Request: 529416367.
+2021-10-19 22:39:03.728 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:161 - Request: 529416367.
+2021-10-19 22:39:03.728 | DEBUG    | telegram_bot.requests_handler:done_callback_handler:161 - Request: 529416367.
